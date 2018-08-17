@@ -1,0 +1,228 @@
+﻿
+@{
+    ViewBag.Title = "Manpreet";
+}
+
+
+<div class="container">
+    <h2>JS Exercises</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Preview</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">JS Exercises</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="">
+                                <ul class="nav nav-pills">
+                                    <li class="active"><a data-toggle="pill" href="#mathFunctions">Math Functions</a></li>
+                                    <li><a data-toggle="pill" href="#fizzbuzz">FizzBuzz</a></li>
+                                    <li><a data-toggle="pill" href="#factorial">Factorial</a></li>
+                                    <li><a data-toggle="pill" href="#palindrome">Palindrome</a></li>
+                                    <li><a data-toggle="pill" href="#exercise5">Exercise 5</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div id="mathFunctions" class="tab-pane fade in active">
+                                        <h3>Math Functions</h3>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                Put in five numbers to calculate sum, mean, product, smallest and largest number.
+                                            </div>
+                                        </div>
+                                        <div class="row h4">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-6">
+                                                <div class="row h5">Number1<input type="text" id="input1"></div>
+                                                <div class="row h5">Number2<input type="text" id="input2"></div>
+                                                <div class="row h5">Number3<input type="text" id="input3"></div>
+                                                <div class="row h5">Number4<input type="text" id="input4"></div>
+                                                <div class="row h5">Number5<input type="text" id="input5"></div>
+                                            </div>
+                                            <div class="row h5">
+                                                <div class="col-md-5" id="sum"></div>
+                                                <div class="col-md-5" id="product"></div>
+                                                <div class="col-md-5" id="average"></div>
+                                                <div class="col-md-5" id="smallest"></div>
+                                                <div class="col-md-5" id="largest"></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row h4">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <div class="row h5"><button id="btnmath1" type="button" class="btn btn-success">calculate</button></div>
+                                                <div class="row h5"><button type="button" class="btn btn-info">Show code</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="fizzbuzz" class="tab-pane fade">
+                                        <h3>FizzBuzz</h3>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                Put in two numbers to see if they are multiples of numbers from 1 to 100.
+                                            </div>
+                                        </div>
+                                        <div class="row h4">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-6">
+                                                <div class="row h5">Number1<input type="text" id="fbnum1"></div>
+                                                <div class="row h5">Number2<input type="text" id="fbnum2"></div>
+                                            </div>
+                                            <div class="row h6">
+                                                <div class="col-md-5" id="fbout"></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row h4">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <div class="row h5"><button id="btnmath4" type="button" class="btn btn-success">check</button></div>
+                                                <div class="row h5"><button type="button" class="btn btn-info">Show code</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="factorial" class="tab-pane fade">
+                                        <h3>Factorial</h3>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                Put in a number to see the factorial
+                                            </div>
+                                        </div>
+                                        <div class="row h4">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-6">
+                                                <div class="row h5">Enter a number<input type="text" id="input7"></div>
+                                            </div>
+                                            <div class="col-md-5" id="factor"></div>
+                                        </div>
+                                        <div class="row h4">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <div class="row h5"><button id="btnmath3" type="button" class="btn btn-success">calculate</button></div>
+                                                <div class="row h5"><button type="button" class="btn btn-info">Show code</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="palindrome" class="tab-pane fade">
+                                        <h3>Palindrome</h3>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                Enter a word to see if it's reverse makes sense or not
+                                            </div>
+                                        </div>
+                                        <div class="row h4">
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-6">
+                                                <div class="row h5">Enter a word<input type="text" id="input6"></div>
+                                            </div>
+                                            <div class="col-md-5" id="reverse"></div>
+                                        </div>
+                                        <div class="row h4">
+                                            <div class="col-md-10"></div>
+                                            <div class="col-md-2">
+                                                <div class="row h5"><button id="btnmath2" type="button" class="btn btn-success">check</button></div>
+                                                <div class="row h5"><button type="button" class="btn btn-info">Show code</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="exercise5" class="tab-pane fade">
+                                        <h3>Exercise 5</h3>
+                                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $("#btnmath1").click(function () {
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
+
+
+            var sum = num1 + num2 + num3 + num4 + num5
+            var product = num1 * num2 * num3 * num4 * num5
+            var average = sum / 5;
+            var smallest = Math.min(num1, num2, num3, num4, num5)
+            var largest = Math.max(num1, num2, num3, num4, num5)
+
+            $("#sum").text("The sum is " + sum);
+            $("#product").text("The product is " + product);
+            $("#average").text("The average is " + average);
+            $("#smallest").text("The smallest number is" + smallest);
+            $("#largest").text("The largest number is " + largest);
+        });
+
+        var isPalindrome = function (string) {
+            if (string == string.split('').reverse().join('')) {
+                $("#reverse").text(string + ' is a palindrome.')
+            }
+            else {
+                $("#reverse").text(string + ' is not a palindrome.');
+            }
+        }
+        $("#btnmath2").click(function () {
+            isPalindrome($("#input6").val());
+            return false;
+        })
+
+        function fact(num) {
+            if (num < 0)
+                return "Undefined";
+            var fact = 1;
+            for (var i = num; i > 1; i--)
+                fact *= i;
+            $("#factor").text("The factorial of " + num + " is " + fact + ".");
+            return fact;
+        }
+
+        $("#btnmath3").click(function () {
+            fact($("#input7").val());
+        })
+
+        $("#btnmath4").click(function () {
+            var digit1 = Number($("#fbnum1").val());
+            var digit2 = Number($("#fbnum2").val());
+
+            var numbers = [];
+            for (var loop = 1; loop <= 100; loop++) {
+                if (loop % digit1 == 0 && loop % digit2 == 0) {
+                    numbers.push("FizzBuzz")
+                } else if (loop % digit1 == 0) {
+                    numbers.push("Fizz")
+                } else if (loop % digit2 == 0) {
+                    numbers.push("Buzz")
+                } else {
+                    numbers.push(loop);
+                }
+            };
+            var output = numbers.join(', ');
+            $("#fbout").text(output);
+        });
+    </script>
+}
